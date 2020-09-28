@@ -6,6 +6,24 @@ public class User implements Serializable {
         private Integer id;
         private String userName;
         private String userCode;
+        private String userPassword;
+        private String phone;
+
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public Integer getId() {
         return id;

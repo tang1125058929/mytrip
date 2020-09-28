@@ -4,6 +4,7 @@ import cn.mytrip.beans.dto.Dto;
 import cn.mytrip.beans.pojo.User;
 import cn.mytrip.common.DtoUtil;
 import cn.mytrip.common.Page;
+import cn.mytrip.quartz.MyTask;
 import cn.mytrip.service.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
