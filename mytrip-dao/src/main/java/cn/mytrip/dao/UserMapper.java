@@ -3,6 +3,7 @@ package cn.mytrip.dao;
 
 
 import cn.mytrip.beans.pojo.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -21,5 +22,7 @@ public interface UserMapper {
      * @return
      */
     int getUserCountByWord(Map<String, Object> params);
+
+    User getUserByUserCode(@Param("userCode") String userCode);
 
 }

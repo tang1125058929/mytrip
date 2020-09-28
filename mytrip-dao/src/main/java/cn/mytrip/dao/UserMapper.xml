@@ -22,4 +22,7 @@
         select count(1) from smbms_user
         <include refid="userParams"/>
     </select>
+    <select id="getUserByUserCode" parameterType="java.lang.String" resultType="cn.mytrip.beans.pojo.User">
+        SELECT*FROM smbms_user WHERE userCode=#{userCode}
+    </select>
 </mapper>
